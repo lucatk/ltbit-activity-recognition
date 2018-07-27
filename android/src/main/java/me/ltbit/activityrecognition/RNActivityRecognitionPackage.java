@@ -1,4 +1,4 @@
-package com.xebia.activityrecognition;
+package me.ltbit.activityrecognition;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

@@ -1,4 +1,4 @@
-package com.xebia.activityrecognition;
+package me.ltbit.activityrecognition;
 
 import android.app.IntentService;
 import android.content.Intent;
