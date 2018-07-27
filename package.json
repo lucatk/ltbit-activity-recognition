@@ -1,7 +1,7 @@
 {
-  "name": "react-native-activity-recognition",
-  "version": "3.2.0",
-  "description": "React Native wrapper for the Activity Recognition API.",
+  "name": "ltbit-activity-recognition",
+  "version": "1.0.0",
+  "description": "React Native wrapper for the Activity Recognition API, fork by LtBit.",
   "keywords": [
     "react-native",
     "android",
@@ -11,8 +11,12 @@
   ],
   "main": "index.js",
   "scripts": {},
-  "author": "Gert Hengeveld <ghengeveld@xebia.com>",
+  "author": "LtBit",
   "contributors": [
+    {
+      "name": "LtBit",
+      "email": "lucakillmaier@lu-co.de"
+    },
     {
       "name": "Gert Hengeveld",
       "email": "ghengeveld@xebia.com"
@@ -23,13 +27,13 @@
     }
   ],
   "license": "GPL",
-  "homepage": "https://github.com/XebiaStudio/react-native-activity-recognition#readme",
+  "homepage": "https://github.com/lucatk/ltbit-activity-recognition",
   "repository": {
-    "url": "git+https://github.com/XebiaStudio/react-native-activity-recognition.git",
+    "url": "git+https://github.com/lucatk/ltbit-activity-recognition.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/XebiaStudio/react-native-activity-recognition/issues"
+    "url": "https://github.com/lucatk/ltbit-activity-recognition/issues"
   },
   "devDependencies": {
     "react": "^15.3.2",
