@@ -1,6 +1,6 @@
-# react-native-activity-recognition
+# ltbit-activity-recognition
 
-[![npm version][npm shield]][npm url]
+<!-- [![npm version][npm shield]][npm url] -->
 
 React Native wrapper for the [Android Activity Recognition API][1] and [CMMotionActivity][3]. It attempts to determine the user activity such as
 driving, walking, running and cycling. Possible detected activities for android are [listed here][2] and for iOS are [listed here][3].
@@ -10,10 +10,10 @@ driving, walking, running and cycling. Possible detected activities for android 
 [3]: https://developer.apple.com/reference/coremotion/cmmotionactivity
 [4]: https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking
 
-[npm shield]: https://img.shields.io/npm/v/react-native-activity-recognition.svg
-[npm url]: https://www.npmjs.com/package/react-native-activity-recognition
+<!-- [npm shield]: https://img.shields.io/npm/v/react-native-activity-recognition.svg
+[npm url]: https://www.npmjs.com/package/react-native-activity-recognition -->
 
-## Installation
+<!-- ## Installation
 
 ```bash
 npm i -S react-native-activity-recognition
@@ -23,13 +23,13 @@ or with Yarn:
 
 ```bash
 yarn add react-native-activity-recognition
-```
+``` -->
 
 ## Linking
 
 ### Automatic
 
-`react-native link react-native-activity-recognition`
+`react-native link ltbit-activity-recognition`
 
 > **IMPORTANT NOTE:** You'll need to follow Step 4 for both iOS and Android of manual-linking
 
@@ -42,8 +42,8 @@ Make alterations to the following files in your project:
 1. Add following lines to `android/settings.gradle`
 ```gradle
 ...
-include ':react-native-activity-recognition'
-project(':react-native-activity-recognition').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-activity-recognition/android')
+include ':ltbit-activity-recognition'
+project(':ltbit-activity-recognition').projectDir = new File(rootProject.projectDir, '../node_modules/ltbit-activity-recognition/android')
 ...
 ```
 
@@ -52,14 +52,14 @@ project(':react-native-activity-recognition').projectDir = new File(rootProject.
 ...
 dependencies {
     ...
-    compile project(':react-native-activity-recognition')
+    compile project(':ltbit-activity-recognition')
     ...
 }
 ```
 
 3. Add import and link the package in `android/app/src/.../MainApplication.java`
 ```java
-import com.xebia.activityrecognition.RNActivityRecognitionPackage;  // <--- add import
+import me.ltbit.activityrecognition.RNActivityRecognitionPackage;  // <--- add import
 
 public class MainApplication extends Application implements ReactApplication {
     // ...
@@ -78,7 +78,7 @@ public class MainApplication extends Application implements ReactApplication {
 ...
 <application ...>
     ...
-    <service android:name="com.xebia.activityrecognition.DetectionService"/>
+    <service android:name="me.ltbit.activityrecognition.DetectionService"/>
     ...
 </application>
 ...
@@ -87,7 +87,7 @@ public class MainApplication extends Application implements ReactApplication {
 #### iOS
 
 1. In the XCode's "Project navigator", right click on your project's Libraries folder ➜ `Add Files to <...>`
-2. Go to `node_modules` ➜ `react-native-activity-recognition` ➜ `ios` ➜ select `RNActivityRecognition.xcodeproj`
+2. Go to `node_modules` ➜ `ltbit-activity-recognition` ➜ `ios` ➜ select `RNActivityRecognition.xcodeproj`
 3. Add `RNActivityRecognition.a` to `Build Phases -> Link Binary With Libraries`
 4. Add `NSMotionUsageDescription` key to your `Info.plist` with strings describing why your app needs this permission
 
@@ -95,7 +95,7 @@ public class MainApplication extends Application implements ReactApplication {
 ## Usage
 
 ```js
-import ActivityRecognition from 'react-native-activity-recognition'
+import ActivityRecognition from 'ltbit-activity-recognition'
 
 ...
 
@@ -186,6 +186,7 @@ The following activity types are supported:
 
 The following projects were very helpful in developing this library:
 
+- https://github.com/Aminoid/react-native-activity-recognition
 - https://github.com/googlesamples/android-play-location
 - https://bitbucket.org/timhagn/react-native-google-locations
 - https://github.com/facebook/react-native/blob/master/Libraries/Geolocation
